@@ -1,0 +1,24 @@
+startshape DAY[]
+ 
+shape DAY{
+        DOODAA[hue 236.55 saturation 0.4] 
+}
+ 
+shape DOODAA{
+        FLIPPITY(0)[]
+        FLIPPITY(2)[flip 180]
+}
+ 
+shape FLIPPITY(natural floopity){
+        CORNERSQUARE[brightness ( 1 + (-0.25 * floopity ) ) ]
+        CORNERSQUARE[brightness ( 1 + (-0.25 * (mod(floopity+1,4)) )) flip 135]
+        FLIPPITY(mod(floopity+1,4)) [ size 0.75]
+}
+ 
+path CORNERSQUARE{
+        MOVETO(0,0)
+        LINETO(1,0)
+        LINETO(1,1)
+        LINETO(0,1)
+        CLOSEPOLY()
+}

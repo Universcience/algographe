@@ -1,0 +1,44 @@
+startshape <var id="r1" values="GRID CORNERSQUARE DOTS HALFLINE LINE HALFGRID">GRID</var>[]
+ 
+factor = <vars id="r2" class="var" values ="0.95" types="13">0.95</vars>
+ 
+shape GRID{
+        HALFGRID[]
+        HALFGRID<vars id="r3" class="rotate" values="180" types="12">[rotate 180]</vars>
+}
+ 
+shape HALFGRID{
+        LINE[]
+        HALFGRID[<vars id="r4" class="flip y size" values="90 1 1" types="1 16 0">[flip 90 y 1 size 1</vars> factor]]
+}
+ 
+shape LINE{
+        HALFLINE[]
+        HALFLINE[<vars id="r5" class="flip x" values="90 1" types="1 16">[flip 90 x 1</vars> size factor 1 ]]
+        DOTS[[x -1 ]]
+}
+ 
+shape HALFLINE
+rule 19{
+        CORNERSQUARE[]
+        HALFLINE[[x 1 size factor 1 x 1 size factor 1]]
+        DOTS<vars id="r6" class="brightness" values ="1" types="24">[brightness 1]</vars>
+        DOTS[[x 1 size factor 1]]
+}
+rule{
+        HALFLINE[[y 1 size 1 -1]]
+}
+ 
+shape DOTS{
+        loop <vars id="r7" class="var" values ="2" types="16">2</vars> [rotate 180  x 1 y 1] loop <vars id="r8" class="var" values ="2" types="16">2</vars> [flip 45] {
+                CORNERSQUARE[[x 0.1 0.1 size 0.3 0.08 ]] 
+        }
+}
+
+path CORNERSQUARE{
+        MOVETO<vars id="r9" class="x y" values="0 0" types="17 17" coord="true">(0,0)</vars>
+        LINETO<vars id="r10" class="x y" values="1 0" types="17 17" coord="true">(1,0)</vars>
+        LINETO<vars id="r11" class="x y" values="1 1" types="17 17" coord="true">(1,1)</vars>
+        LINETO<vars id="r12" class="x y" values="0 1" types="17 17" coord="true">(0,1)</vars>
+        CLOSEPOLY()
+}

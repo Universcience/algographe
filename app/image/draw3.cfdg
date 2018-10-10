@@ -1,0 +1,13 @@
+startshape triangolineri
+background {saturation 1 brightness -1 hue 240}
+
+rule triangolineri {
+	triangoli {saturation 0.9 brightness 1 hue 10}
+}
+
+rule triangoli {
+	TRIANGLE{} 
+	TRIANGLE{size 0.5 rotate 90 brightness -1}
+	triangoli {x 0.3 y 0.6 size 0.7 rotate -60 hue 10}
+	triangoli {x -0.4 y 0.2 size 0.4 rotate 60 hue 10}
+}

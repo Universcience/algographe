@@ -1,0 +1,57 @@
+@import "./include/colors";
+@vwConverter: 100/1920/2;
+.credits{
+	background: black;
+	padding-top: 270vw*@vwConverter;
+	padding-left: 210vw*@vwConverter;
+	h2{
+		font-family: 'SH Pinscher';
+		font-weight: 400;
+		font-size: 50vw*@vwConverter;
+		color: @dark-blue;
+		text-transform: uppercase;
+		line-height: 1.2em;
+	}
+	p{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 400;
+		color: @beige;
+		margin-bottom: 45vw*@vwConverter;
+		font-size: 30vw*@vwConverter;
+		line-height: 1.3em;
+	}
+	.logo-credits{
+		margin-top: 145vw*@vwConverter;
+		img{
+			display: block;
+		}
+		p{
+
+			font-size: 20vw*@vwConverter;
+		}
+	}
+	.left,.right{
+		display: inline-block;
+		width: 700vw*@vwConverter;
+		vertical-align: top;
+	}
+	.right{
+		margin-left: 220vw*@vwConverter;
+	}
+	.close-btn{
+		background: white;
+		cursor: pointer;
+		position: absolute;
+		bottom: 30vw*@vwConverter;
+		right: 30vw*@vwConverter;
+		width: 100vw*@vwConverter;
+		height: 100vw*@vwConverter;
+		border-radius: 50vw*@vwConverter;
+		img{
+			width: 40vw*@vwConverter;
+			margin-top: 50%;
+			margin-left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+}

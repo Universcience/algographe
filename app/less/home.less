@@ -1,0 +1,49 @@
+@import "./include/colors";
+@vwConverter: 100/1920/2;
+
+.home{
+	background: @blue;
+	padding-left: 150vw*@vwConverter;
+	h1{
+		font-weight: 400;
+		/*margin-top: 280vw*@vwConverter;*/
+		margin-top: 4%;
+		color:@beige;
+		font-family: 'SH Pinscher';
+		font-size: 300vw*@vwConverter;
+		text-shadow: -20vw*@vwConverter 30vw*@vwConverter @dark-blue;
+		height: 14vw;
+	}
+	.subtitle{
+		font-weight: 500;
+		color:@beige;
+		font-family: 'Roboto', sans-serif;
+		background: @dark-blue;
+		display: inline-block;
+		height: 55vw*@vwConverter;
+		line-height: 55vw*@vwConverter;
+		padding:0 25vw*@vwConverter;
+		font-size: 30vw*@vwConverter;
+		border-radius:5vw*@vwConverter;
+	}
+	.start_buttons{
+		margin-top: 180vw*@vwConverter;
+	}
+	.button{
+
+	  height: 70vw*@vwConverter;
+	  line-height: 70vw*@vwConverter;
+
+	  color: @dark-blue;
+	  padding:0 45vw*@vwConverter;
+	  box-shadow: -5px 5px @dark-blue;
+	  margin-right: 40vw*@vwConverter;
+
+	  &:hover{
+		background-color: @dark-blue;
+		color:@beige;
+	
+	  }
+	}
+	
+}

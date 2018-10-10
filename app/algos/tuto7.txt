@@ -1,0 +1,5 @@
+startshape MaForme
+rule MaForme {
+	SQUARE<vars id="var8" class="a" values="-0.9" types="13">[a -0.9]</vars>
+	MaForme<vars id="var7" class="size rotate" values="0.9 12" types="22 12">{size 0.9 rotate 12}</vars>
+}

@@ -1,0 +1,398 @@
+@import "./include/colors";
+@vwConverter: 100/1920/2;
+@vhConverter: 100/1080;
+.tuto{
+	background: @orange;
+	overflow: hidden;
+	.center{
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		bottom:0;
+		left: 0;
+		right: 0;
+		margin:0 auto;
+	}
+	.circle{
+		width: 1590vw*@vwConverter;
+		height: 1590vw*@vwConverter;
+		border-radius: 1590vw*@vwConverter;
+		background-color: @orangeDark;
+		&.light{
+			background-color: @orange;
+		}
+	}
+	h2{
+		font-family: 'SH Pinscher';
+		font-weight: 400;
+		font-size:75vw*@vwConverter;
+		color:@beige;
+		background-color: @orange;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 10vw*@vwConverter;
+		height: 118vh*@vhConverter;
+		line-height: 118vh*@vhConverter;
+
+	}
+	p{
+		font-family: 'RobotoCondensedBold';
+		color: @beige;
+		font-size: 40vw*@vwConverter;
+		text-align: center;
+		span{
+			text-decoration: underline;
+		}
+	}
+	.button{
+		display: block;
+		margin:0 auto;
+		font-size: 35vw*@vwConverter;
+		color:@orangeDark;
+		background-color: @beige;
+		width: 250vw*@vwConverter;
+		margin-top: 80vw*@vwConverter;
+		-webkit-box-shadow: -5px 5px 0px 3px @orangeDark;
+		-moz-box-shadow: -5px 5px 0px 3px @orangeDark;
+		box-shadow: -5px 5px 0px 3px @orangeDark;
+
+
+		&:hover{
+			background-color: @orangeDark;
+			color:@beige;
+		
+		}
+
+		&.understood.center{
+			position: absolute;
+			right: 60vw*@vwConverter;
+			left: inherit;
+			height: 70vw*@vwConverter;
+
+		}
+
+	}
+	.tuto1{
+		height: 100%;
+		position: relative;
+		h1{
+			font-family: 'SH Pinscher';
+			font-weight: 400;
+			font-size: 946vw*@vwConverter;
+			height: 946vw*@vwConverter;
+			line-height: 946vw*@vwConverter;
+			text-transform: uppercase;
+			color: @beige;
+			transition: color 0.8s ease;
+			&.grey{
+				color:@orangeDark;
+			}
+			overflow: hidden;
+			text-align: center;
+			
+		}
+
+
+
+		div.center{
+			height: 250vw*@vwConverter;
+		}
+	}
+	.tuto2, .tuto3,.tuto4, .tuto5,.tuto6,.tuto7{
+		height: 100%;
+		position: relative;
+		text-align: center;
+		color:@beige;
+
+
+		.content{
+			width: 915vw*@vwConverter;
+			height:850vw*@vwConverter;
+			p{
+				margin-top: 65vw*@vwConverter;
+			}
+			div.code{
+				background-color: @beige;
+				width: 360vw*@vwConverter;
+				height:  360vh*@vhConverter;
+				max-height: 360vw*@vwConverter;
+				border-radius: 10vw*@vwConverter;
+				margin:0 auto;
+				margin-bottom: 60vw*@vwConverter;
+				margin-top: 60vw*@vwConverter;
+				position: relative;
+				z-index: 1;
+
+				#pre-code{
+					text-align: left;
+					width: auto;
+					display: inline-table;
+					margin: 0 auto;
+					top: 50%;
+					transform: translate(0,-50%);
+					code{
+						font-family: 'Sanchez';
+						color:@greyDark;
+						text-align: left;
+						font-size:22vw*@vwConverter;
+						line-height: 30vw*@vwConverter;
+
+						var, vars{
+							font-style: normal;
+							background-color: @redDark;
+							color:@beige;
+							display: inline-block;
+							font-weight: 100;
+							padding: 5vw*@vwConverter 8vw*@vwConverter;
+							border-radius: 5vw*@vwConverter;
+							cursor: pointer;
+
+
+						}
+						var{
+							li{
+								text-transform: uppercase;
+							}
+						}
+					}
+				}
+				
+
+
+				p{
+					color:@greyDark;
+					font-size:22vw*@vwConverter;
+					text-align: left;
+					position: absolute;
+					top: 50%;
+					transform: translate(0,-50%);
+					bottom:0;
+					left: 0;
+					right: 0;
+					margin:0 auto;
+					width: 220vw*@vwConverter;
+					height:120vw*@vwConverter;
+					font-family: 'Sanchez';
+					line-height: 30vw*@vwConverter;
+					var{
+						font-style: normal;
+						background-color: @redDark;
+						color:@beige;
+						display: inline-block;
+						font-weight: 100;
+						padding: 5vw*@vwConverter 8vw*@vwConverter;
+						border-radius: 5vw*@vwConverter;
+						cursor: pointer;
+
+
+					}
+				}
+				ul.listVar, ul.listVars{
+					list-style: none;
+					display: inline-block;
+					background-color: @redDarkDark;
+					padding: 10vw*@vwConverter;
+					border-radius: 5vw*@vwConverter;
+					width: 245vw*@vwConverter;
+					position: absolute;
+					/*top:170vw*@vwConverter;*/
+					white-space: normal;
+					top: 4vh;
+    				right: -16.5vw;
+
+					&.hide{
+						display: none;
+					}
+					li{
+						background-color: @redDark;
+						border-radius: 5vw*@vwConverter;
+						margin-bottom: 2px;
+						padding: 10vw*@vwConverter 0;
+						font-size:22vw*@vwConverter; 
+						height: 45vw*@vwConverter; 
+						box-sizing: border-box;
+						transition: all 0.3s;
+						cursor: pointer;
+						color: @beige;
+						text-align: center;
+						&:last-child{
+							margin-bottom: 0;
+						}
+						&:hover{
+							background-color: @beige;
+							color: @redDark;
+						}
+					}
+					
+				}
+				ul.listVars{
+					width: auto;
+					padding-bottom: 60vw*@vwConverter; 
+
+					 -webkit-touch-callout: none; /* iOS Safari */
+				    -webkit-user-select: none; /* Safari */
+				     -khtml-user-select: none; /* Konqueror HTML */
+				       -moz-user-select: none; /* Firefox */
+				        -ms-user-select: none; /* Internet Explorer/Edge */
+				            user-select: none;
+					
+					.more, .less{
+						cursor: pointer;
+						display: inline-block;
+					}
+					li{
+						background-color: transparent;
+						text-align: left;
+						padding: 8vw*@vwConverter; 
+						width: auto;
+						text-align: right;
+						cursor: inherit;
+
+						.valueName{
+							padding-right: 30vw*@vwConverter; 
+							// display: inline-block;
+							// float: left;
+							// text-align: left;
+
+
+
+							
+						}
+
+						div.interact-value{
+							display: inline-block;
+							background-color: @redDark;
+							// float: right;
+							text-align: center;
+							width: 180vw*@vwConverter; 
+							padding: 5vw*@vwConverter 10vw*@vwConverter;
+							border-radius: 5vw*@vwConverter;
+							margin-top: -5vw*@vwConverter;
+							font-size: 30vw*@vwConverter;
+							font-weight: 200; 
+
+							.less{
+								float: left;
+							}
+							.more{
+								float: right;
+							}
+							.less,.more, span.value{
+								display: inline-block;
+								padding: 3vw*@vwConverter 8vw*@vwConverter;
+								box-sizing: border-box;
+							}
+						
+						}
+
+						&:hover{
+							background-color: inherit;
+							color:@beige;
+						}
+					}
+					.validate{
+						background-color: @redDark;
+						color:@beige;
+						text-align: center;
+						text-transform: uppercase;
+						font-family: 'SH Pinscher';
+						cursor: pointer;
+						position: absolute;
+						bottom:0;
+						left: 0;
+						width: 100%;
+						height: 50vw*@vwConverter; 
+						line-height: 50vw*@vwConverter;
+						font-size: 30vw*@vwConverter;
+					}
+				}
+			}
+
+		}
+		.explication{
+			background-color: @orange;
+			color:@beige;
+			text-align: center;
+			border-radius: 8vw*@vwConverter;
+			font-weight: 800;
+			margin:0 auto;
+			width: 750vh*@vhConverter;
+			padding: 5vw*@vwConverter;
+			font-size: 22vh*@vhConverter;
+			font-family: 'RobotoCondensedBold';
+			padding: 15vw*@vwConverter;
+		}
+	}
+
+	.tuto4{
+
+		.content{
+			div.code{
+				width: 480vw*@vwConverter;
+				height:  340vw*@vwConverter;
+				p{
+					width: 325vw*@vwConverter;
+					height: auto;
+
+				}
+			}
+		}
+		div.center{
+			height: 1000vh*@vhConverter;
+		}
+		#var2{
+			padding: 5vw*@vwConverter 15vw*@vwConverter;
+		}
+		.listVar{
+			left: 52%;
+		}
+	}
+	.tuto5{
+		.content{
+			div.code{
+				width: 835vw*@vwConverter;
+			}
+		}
+	}
+	.tuto7{
+		.explication, .center.content{
+			width: 1130vh*@vhConverter;
+		}
+		.content{
+			div.code{
+				width: 422vw*@vwConverter;
+			}
+		}
+	}
+	.tuto8{
+		height: 100%;
+		position: relative;
+		.center{
+			text-align: center;
+
+		}
+		h1{
+			font-size: 150vw*@vwConverter;
+			color:@beige;
+			font-family: 'SH Pinscher';
+			font-weight: 200;
+			text-align: center;
+			letter-spacing: -5vw*@vwConverter;
+			text-transform: uppercase; 
+			text-shadow: -10px 10px 0px rgba(207, 79, 0, 1);
+		}
+		.actions{
+			margin: 50vw*@vwConverter auto;
+			display:inline-block;
+			.button{
+				display: inline-block;
+				width: 300vw*@vwConverter;
+				margin: 0 50vw*@vwConverter;
+			}
+		}
+		
+	}
+
+
+	
+}

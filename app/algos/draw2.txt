@@ -1,0 +1,17 @@
+background <vars id="c1" class="saturation hue" values ="0.5 200" types="0 1">{saturation 0.5 hue 200}</vars>
+tile <vars id="c2" class="s" values ="3" types="16">{s 3}</vars>
+startshape <var id="c3" values="START MF P">START</var>
+rule START {
+	<var id="c4" values="MF P F">MF</var><vars id="c5" class="hue saturation brightness rotate" values ="0 1 0 10" types="1 0 24 5">{hue 0 saturation 1  brightness 0 rotate 10}</vars>
+}
+rule MF {
+	<vars id="c12" class="var" values ="10" types="5">10</vars>*{ rotate (<vars id="c6" class="var" values ="360" types="12">360</vars>/ 1.618034)  size 0.97  x 20 saturation 1  hue 0.2   brightness 0 z  1} F{size 0.2  r  1} 
+}
+rule F{
+	<vars id="c7" class="var" values ="280" types="20">280</vars>*{rotate (<vars id="c8" class="var" values ="360" types="12">360</vars> / 1.618034)  size 0.99  <vars id="c20" class="x saturation hue" values="20 1 0" types="3 0 1">x  20  saturation 1 hue 0.0</vars>   z  1} P{}  
+}
+
+rule P{
+	<var id="c15" values="CIRCLE TRIANGLE SQUARE">CIRCLE</var><vars id="c9" class="size brightness saturation" values="4 1 0" types="21 24 0">{size 4  brightness 1 saturation 0}  </vars>
+	<var id="c11" values="CIRCLE TRIANGLE SQUARE">CIRCLE</var><vars id="c10" class="size brightness saturation hue" values="2.5 1 1 240" types="21 24 0 1">{size 2.5 brightness 1 saturation 1 hue 240}</vars>
+}

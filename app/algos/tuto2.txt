@@ -1,0 +1,4 @@
+startshape MaForme
+rule MaForme {
+	SQUARE[ ]
+}

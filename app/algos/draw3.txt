@@ -1,0 +1,13 @@
+startshape <var id="d1" values="triangolineri triangoli">triangolineri</var>
+background <vars id="d2" class="saturation brightness hue" values ="1 -1 240" types="0 24 1">{saturation 1 brightness -1 hue 240}</vars>
+
+rule triangolineri {
+	triangoli <vars id="d3" class="saturation brightness hue" values ="0.9 1 10" types="0 24 1">{saturation 0.9 brightness 1 hue 10}</vars>
+}
+
+rule triangoli {
+	<var id="d4" values="CIRCLE TRIANGLE SQUARE">TRIANGLE</var>{} 
+	<var id="d5" values="CIRCLE TRIANGLE SQUARE">TRIANGLE</var><vars id="d6" class="size rotate" values ="0.5 90" types="9 12">{size 0.5 rotate 90</vars> brightness -1}
+	triangoli <vars id="d7" class="x y size rotate hue" values ="0.3 0.6 0.7 -60 10" types="17 17 22 12 1">{x 0.3 y 0.6 size 0.7 rotate -60 hue 10}</vars>
+	triangoli <vars id="d8" class="x y size rotate hue" values ="-0.4 0.2 0.4 60 10" types="17 17 23 12 1">{x -0.4 y 0.2 size 0.4 rotate 60 hue 10}</vars>
+}

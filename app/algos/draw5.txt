@@ -1,0 +1,48 @@
+startshape picture
+background{brightness -1}
+
+tile{size 3 y -0.6 x -1.9}
+rule picture{
+        glow{hue 2.49 saturation 0.5116}
+        glow{hue 225.00 saturation 0.0157}
+}
+
+rule glow{
+        SQUARE{brightness 1 alpha -0.99}
+        glow{size 0.999 x 0.1 rotate 10}
+        wings{size 0.1 alpha -0.99}
+        wings{size 0.1 alpha -0.99 flip 90}
+        star{size 0.02 brightness 1 z -1}
+}
+
+rule glow{
+        glow{ x -0.1 rotate -10}
+}
+
+rule glow{
+        glow{ y -0.1 rotate 10}
+}
+
+rule glow{
+        glow{ y 0.1 rotate -10}
+}
+
+rule wings{
+        30*{x 0.9 rotate 5 size 0.9}SQUARE{size 1 2}
+}
+
+rule star{
+        CIRCLE{}
+}
+
+rule star{
+        CIRCLE{}
+        star{size 0.9}
+}
+
+rule star{
+        CIRCLE{}
+        star{size 1.5}
+}
+
+rule star 2{}

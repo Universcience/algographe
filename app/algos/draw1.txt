@@ -1,0 +1,14 @@
+startshape coeur(<var id="h1" values="0 1">0</var>)
+path coeur(filled) {
+        MOVETO<vars id="h2" class="x y" values="0 0" types="18 18" coord="true">(0,0)</vars>
+        ARCTO<vars id="h3" class="x y z" values="-2 -2 1" types="18 18 18" coord="true">(-2,-2,1)</vars>
+        LINETO<vars id="h4" class="x y" values="0 -4" types="18 18" coord="true">(0,-4)</vars>
+        LINETO<vars id="h5" class="x y" values="2 -2" types="18 18" coord="true">(2,-2)</vars>
+        ARCTO<vars id="h6" class="x y radius" values="0 0 1" types="18 18 18" coord="true">(0,0,1)</vars>
+        CLOSEPOLY()
+        STROKE<vars id="h7" class="stroke" values="0.35" types="19" coord="true">(0.35)</vars>
+        <vars id="h8" class="saturation brightness hue" values ="1 1 0" types="0 24 1">[saturation 1 brightness 1 hue 0]</vars>
+        if (filled) {
+                FILL<vars id="h9" class="saturation brightness hue" values ="1 1 0" types="0 24 1">[saturation 1 brightness 1 hue 0]</vars>
+        }
+}

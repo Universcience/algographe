@@ -1,0 +1,5 @@
+startshape MaForme
+rule MaForme {
+	CIRCLE <vars id="var3" class="hue saturation brightness" values="120 1 0.6" types="1 0 24">[hue 120 saturation 1 brightness 0.6]</vars>
+	TRIANGLE [x 1 y 0 size 0.5 <vars id="var4specific" class="hue saturation brightness" values ="240 1 0.6" types="1 0 24">hue 240 saturation 1 brightness 0.6]</vars>
+}

@@ -1,0 +1,6 @@
+startshape MaForme
+rule MaForme {
+	SQUARE<vars id="tuto6a" class="x rotate" values="0 50" types="18 12">{x 0 rotate 50}</vars>
+	SQUARE<vars id="tuto6b" class="x rotate" values="-2 70" types="18 12">{x -2 rotate 70}</vars>
+	SQUARE<vars id="tuto6c" class="x rotate" values="-4 90" types="18 12">{x -4 rotate 90}</vars>
+}

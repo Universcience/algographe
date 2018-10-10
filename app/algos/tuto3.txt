@@ -1,0 +1,4 @@
+startshape MaForme
+rule MaForme {
+	<var id="var1" values="CIRCLE SQUARE TRIANGLE">SQUARE</var> [ ]
+}

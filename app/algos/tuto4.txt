@@ -1,0 +1,6 @@
+startshape MaForme
+rule MaForme {
+	CIRCLE []
+	<var id="plus">+</var>
+	<varspe id="tri" class="hide">TRIANGLE <vars id="triangle" class="x y size"" values="0 0 0.5" types="18 18 25">[ x 0 y 0 size 0.5]</vars></varspe>
+}
